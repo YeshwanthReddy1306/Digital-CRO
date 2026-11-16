@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yeshwanth Digital CRO & Paid Media Lab | Interactive Shopify Tools & 9:16 Whitelisted Ads</title>
+<meta name="description" content="Interactive Shopify product configurators and modular 9:16 whitelisted ad systems for high-AOV US D2C brands. Built in 48 hours, pay only after live staging approval." />
+<meta property="og:title" content="Yeshwanth Digital CRO & Paid Media Lab" />
+<meta property="og:description" content="We turn complex product catalogs into interactive 60-second bundle builders. Pay-on-approval pilots." />
+<meta name="theme-color" content="#FBF9F5" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true">
+<div class="loader-top"><span>Yeshwanth Digital · CRO & Paid Media Lab</span><span>Loading the lab</span></div>
+<div class="loader-mid"><span><i>Configure.</i></span><span><i>Convert.</i></span></div>
+<div class="loader-bottom"><div class="loader-count" id="loader-count">00</div><div class="loader-bar"><b id="loader-bar"></b></div></div>
+</div>
+<div class="progress" id="progress"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<div class="toast" id="toast">Email copied</div>
+<div class="top-bar">
+<div><span class="status-dot"></span><strong>B2B e-commerce conversion & paid media studio</strong> · Zero-risk "pay-on-approval" staging pilots</div>
+<div class="mono tb-right">Founder & Lead Strategist: Chintala Yeshwanth Reddy · smileyesh2007@gmail.com</div>
+</div>
+<nav class="navbar" id="navbar">
+<div class="navbar-inner">
+<a class="agency-brand" href="#top" data-magnetic>
+<div class="agency-mark">YD</div>
+<div><span class="agency-name">Yeshwanth Digital</span><span class="agency-sub">CRO & Paid Media Lab</span></div>
+</a>
+<div class="nav-links">
+<a class="link" href="#how">How it works</a>
+<a class="link" href="#work">Prototypes</a>
+<a class="link" href="#ads">Ad lab</a>
+<a class="link" href="#pricing">Pilot pricing</a>
+<a class="btn-primary" data-magnetic href="mailto:smileyesh2007@gmail.com?subject=B2B%20Shopify%20CRO%20%26%20Paid%20Social%20Pilot">Book a staging pilot <span class="btn-arrow">→</span></a>
+</div>
+</div>
+</nav>
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy" id="hero-copy">
+<div class="eyebrow-pill reveal">⚡ Built for high-AOV US D2C brands on Shopify & Shopify Plus</div>
+<h1 class="hero-title">
+<span class="mask"><span style="--i:0">We turn complex</span></span><br>
+<span class="mask"><span style="--i:1">catalogs into</span></span><br>
+<span class="mask"><span style="--i:2">60-second</span></span>
+<span class="swap" id="swap"><span class="on">bundle builders.</span><span>room sizers.</span><span>fitment finders.</span><span>ROI calculators.</span></span>
+</h1>
+<p class="hero-desc reveal" style="--i:3">Shoppers abandon high-consideration carts when they can't picture fitment, room size, range or bundle savings. We build lightweight interactive configurators that answer those questions on the product page, and the 9:16 ad hooks that send buyers there.</p>
+<div class="hero-actions reveal" style="--i:4">
+<a class="btn-primary" data-magnetic href="https://burrow-vercel-deploy.vercel.app/" target="_blank" rel="noopener">Launch live Burrow × Havenly demo <span class="btn-arrow">↗</span></a>
+<a class="btn-outline" data-magnetic href="#pricing">See the $650–$850 pilot <span class="btn-arrow">→</span></a>
+</div>
+<div class="kpi-strip">
+<div class="kpi-box reveal" style="--i:5"><span class="kpi-num mono">+$<span data-count="310">0</span>–$<span data-count="916">0</span></span><span class="kpi-label">Avg. bundle attach AOV lift</span></div>
+<div class="kpi-box reveal" style="--i:6"><span class="kpi-num mono"><span data-count="48">0</span> hours</span><span class="kpi-label">Custom staging turnaround</span></div>
+<div class="kpi-box reveal" style="--i:7"><span class="kpi-num mono"><span data-count="10">0</span> ads/mo</span><span class="kpi-label">Modular 9:16 whitelisted reels</span></div>
+</div>
+</div>
+<div class="stage pre" id="stage">
+<div class="stage-inner" id="stage-inner">
+<div class="laptop">
+<div class="laptop-screen">
+<div class="laptop-bar"><i></i><i></i><i></i><span class="url" id="sim-url">yourstore.com/products/birdbuddy-bundle</span></div>
+<div class="sim" id="sim">
+<div class="sandbox-tabs" role="tablist" aria-label="Demo brand">
+<button class="sandbox-tab active" data-preset="birdbuddy">🐦 Birdbuddy gift bundler</button>
+<button class="sandbox-tab" data-preset="burrow">🛋️ Burrow room sizer</button>
+<button class="sandbox-tab" data-preset="lectric">🚲 Lectric eBikes ROI</button>
+</div>
+<div class="sim-fade" id="sim-body">
+<div class="sim-head"><div class="sim-title" id="sim-title"></div><div class="sim-badge" id="sim-badge"></div></div>
+<div class="sim-desc" id="sim-desc"></div>
+<div class="opt-grid">
+<button class="opt active" data-opt="0"><b id="opt0-title"></b><span id="opt0-sub"></span></button>
+<button class="opt" data-opt="1"><b id="opt1-title"></b><span id="opt1-sub"></span></button>
+</div>
+<label class="addon"><input type="checkbox" id="addon1" checked><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span id="addon1-label"></span></label>
+<label class="addon"><input type="checkbox" id="addon2" checked><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span id="addon2-label"></span></label>
+</div>
+<div class="sim-total">
+<div><small>CONFIGURED BUNDLE TOTAL</small><span class="price mono" id="sim-price">$0</span></div>
+<div class="lift"><span id="sim-lift">+$0 add-on AOV lift</span>Zero page-speed drag</div>
+</div>
+<div class="freeship"><span id="ship-label">Free-shipping bar</span><div class="track"><b id="ship-bar"></b></div></div>
+</div>
+</div>
+<div class="laptop-base"></div>
+</div>
+<div class="phone" aria-label="Sample 9:16 ad hooks">
+<div class="phone-notch"></div>
+<div class="phone-screen">
+<div class="reel-progress" id="reel-progress"><b></b><b></b><b></b></div>
+<div class="reel" id="reel">
+<div class="reel-slide">
+<span class="reel-tag">Hook 01 · Burrow</span>
+<div class="reel-hook" data-words>Will it fit up <em>your</em> stairs?</div>
+<div class="reel-visual"><div class="mv-stairs"><i style="bottom:0;width:100%"></i><i style="bottom:40px;width:72%"></i><i style="bottom:80px;width:44%"></i><div class="mv-box"></div></div></div>
+<div class="reel-cta">Size my room →</div>
+</div>
+<div class="reel-slide reel-dark">
+<span class="reel-tag">Hook 02 · Lectric</span>
+<div class="reel-hook" data-words>Your commute, <em>minus</em> the gas bill.</div>
+<div class="reel-visual"><div class="mv-range"><div class="row"><span>500W standard</span><span>45 mi</span></div><div class="bar" style="--to:.55"><b></b></div><div class="row"><span>750W long-range</span><span>80 mi</span></div><div class="bar lr" style="--to:.95"><b></b></div></div></div>
+<div class="reel-cta">Build my bike →</div>
+</div>
+<div class="reel-slide reel-emerald">
+<span class="reel-tag">Hook 03 · Birdbuddy</span>
+<div class="reel-hook" data-words>The gift that <em>keeps</em> filming.</div>
+<div class="reel-visual"><div class="mv-cart"><div class="ci"><span>Home 2K HDR + Solar</span><span>$239</span></div><div class="ci"><span>Nutrition set</span><span>$49</span></div><div class="ci"><span>Pro annual pass</span><span>$59</span></div><div class="tot">$347</div></div></div>
+<div class="reel-cta">Build the bundle →</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="marquee" aria-hidden="true">
+<div class="marquee-track">
+<span class="marquee-item">Burrow <i>× Havenly</i></span><span class="marquee-item">Lectric eBikes</span><span class="marquee-item">Birdbuddy</span><span class="marquee-item">Lasfit</span><span class="marquee-item">WOLFBOX</span><span class="marquee-item">Shopify <i>Plus</i></span><span class="marquee-item">Meta Reels</span><span class="marquee-item">TikTok</span><span class="marquee-item">YouTube Shorts</span>
+<span class="marquee-item">Burrow <i>× Havenly</i></span><span class="marquee-item">Lectric eBikes</span><span class="marquee-item">Birdbuddy</span><span class="marquee-item">Lasfit</span><span class="marquee-item">WOLFBOX</span><span class="marquee-item">Shopify <i>Plus</i></span><span class="marquee-item">Meta Reels</span><span class="marquee-item">TikTok</span><span class="marquee-item">YouTube Shorts</span>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+<div class="container">
+<div class="eyebrow reveal">The funnel we build</div>
+<h2 class="section-title reveal" style="--i:1">From scroll-stopping hook to a <em class="accent">bigger first order.</em></h2>
+<p class="section-lead reveal" style="--i:2">Most brands fix ads or the product page. We connect the two: the ad raises the exact question your configurator answers.</p>
+<div class="funnel" id="funnel">
+<div class="funnel-line"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 H100" opacity=".25"/><path class="flow" d="M0 5 H100" pathLength="1000"/></svg></div>
+<div class="packet"></div>
+<div class="step reveal" style="--i:0">
+<div class="step-icon"><svg viewBox="0 0 48 48" fill="none" stroke="#141413" stroke-width="2.4" stroke-linecap="round"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M21 17l8 5-8 5z" fill="#D9532F" stroke="#D9532F"/></svg></div>
+<div class="step-num mono">01 · Paid social</div>
+<h3>The 9:16 hook</h3>
+<p>Whitelisted reels built around the buyer's real friction: sizing, setup, ROI.</p>
+</div>
+<div class="step reveal" style="--i:1">
+<div class="step-icon"><svg viewBox="0 0 48 48" fill="none" stroke="#141413" stroke-width="2.4" stroke-linecap="round"><rect x="5" y="9" width="38" height="28" rx="4"/><path d="M12 20h10M12 27h16"/><circle cx="34" cy="23" r="4" fill="#D9532F" stroke="#D9532F"/></svg></div>
+<div class="step-num mono">02 · Product page</div>
+<h3>The configurator</h3>
+<p>Shoppers answer two questions and see the right bundle, sized and priced.</p>
+</div>
+<div class="step reveal" style="--i:2">
+<div class="step-icon"><svg viewBox="0 0 48 48" fill="none" stroke="#141413" stroke-width="2.4" stroke-linecap="round"><path d="M6 9h6l5 24h20l4-16H15"/><circle cx="20" cy="40" r="2.5"/><circle cx="34" cy="40" r="2.5"/><path d="M25 22l3 3 6-6" stroke="#1F6E4A"/></svg></div>
+<div class="step-num mono">03 · Checkout</div>
+<h3>The bigger cart</h3>
+<p>One-click add-ons and a free-shipping bar lift first-order AOV and ROAS together.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="section" id="work">
+<div class="container">
+<div class="eyebrow reveal">Verified production prototypes</div>
+<h2 class="section-title reveal" style="--i:1">Custom interactive tools built for <em class="accent">category leaders.</em></h2>
+<div class="projects">
+<article class="project reveal" style="--i:0" data-tilt data-cursor="view">
+<div class="project-visual">
+<div class="fp"><div class="fp-dim mono">room width 132"</div><div class="fp-sofa"></div><div class="fp-door"></div><div class="fp-clear">36" walkway ✓</div></div>
+</div>
+<div class="project-body">
+<div class="project-cat">Modular furniture · Havenly Brands</div>
+<h3>Burrow room-width, 24" stairwell & sectional builder</h3>
+<p>An interactive 2D living-room floorplan for the Nomad, Range and Union collections, with real-time walkway clearance math, UPS flat-pack box count and a $2,000 free-shipping bundle bar.</p>
+<div class="result mono">+$916 simulated cart lift · 10 whitelisted 9:16 hooks</div>
+<a class="btn-primary" href="https://burrow-vercel-deploy.vercel.app/" target="_blank" rel="noopener">Open live Burrow app <span class="btn-arrow">↗</span></a>
+</div>
+</article>
+<article class="project reveal" style="--i:1" data-tilt data-cursor="view">
+<div class="project-visual">
+<div class="bk"><div class="bk-chip mono">80 mi range</div>
+<svg viewBox="0 0 200 110" fill="none" stroke="#141413" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g class="wheel"><circle cx="45" cy="75" r="28"/><path d="M45 47v56M17 75h56" stroke-width="2" opacity=".4"/></g>
+<g class="wheel"><circle cx="155" cy="75" r="28"/><path d="M155 47v56M127 75h56" stroke-width="2" opacity=".4"/></g>
+<path d="M45 75l35-38h48l27 38M80 37l22 38 26-38M70 25h22M128 37l-6-16h16"/>
+<rect x="86" y="50" width="30" height="14" rx="4" fill="#D9532F" stroke="#D9532F"/>
+</svg>
+<div class="bk-road"></div></div>
+</div>
+<div class="project-body">
+<div class="project-cat">Connected mobility · TIME 100 Climate</div>
+<h3>Lectric eBikes ride, long-range & gas/CO2 configurator</h3>
+<p>An interactive rider height, payload and commute matchmaker across the XP4, XPeak2, XPedition2, XP Lite2 and XP Trike2, with 48V long-range upgrade nudges and annual gas/CO2 savings math.</p>
+<div class="result mono">+$532–$822 long-range tier lift · 3 ad storyboards</div>
+<a class="btn-outline" href="mailto:smileyesh2007@gmail.com?subject=Request%20Lectric%20eBikes%20Configurator%20Demo">Request live preview link <span class="btn-arrow">→</span></a>
+</div>
+</article>
+<article class="project reveal" style="--i:2" data-tilt data-cursor="view">
+<div class="project-visual">
+<div class="ft">
+<div class="ft-row"><div class="ft-sel">2022 <span>Year</span></div><div class="ft-sel">Ford <span>Make</span></div></div>
+<div class="ft-row"><div class="ft-sel"><span class="ft-typing">F-150</span> <span>Model</span></div></div>
+<div class="ft-ok">✓ CANbus LED kit + TPE liners fit · 3 items</div>
+</div>
+</div>
+<div class="project-body">
+<div class="project-cat">Automotive aftermarket · Fitment & rig builders</div>
+<h3>Lasfit & WOLFBOX vehicle fitment + bundle builders</h3>
+<p>A year/make/model CANbus LED and TPE floor liner bundle builder for Lasfit, and a 3-channel G900 TriPro bumper-to-mirror cable and hardwire selector for WOLFBOX, with synced video walkthroughs.</p>
+<div class="result mono">Eliminates pre-sale fitment tickets · +38% bundle attach</div>
+<a class="btn-outline" href="mailto:smileyesh2007@gmail.com?subject=Request%20Automotive%20Configurator%20Demo">Request live preview link <span class="btn-arrow">→</span></a>
+</div>
+</article>
+</div>
+<!-- AD LAB -->
+<div class="adlab" id="ads">
+<div>
+<div class="eyebrow reveal">Modular 9:16 ad lab</div>
+<h2 class="section-title reveal" style="--i:1">3 concepts × 4 hooks. <em class="accent">Let the data pick.</em></h2>
+<p class="section-lead reveal" style="--i:2">8–12 vertical variations a month with full whitelisting and dark-posting rights on Meta Reels, TikTok and Shorts. Every hook targets one buyer friction, and the matrix shows which one wins.</p>
+<div class="matrix" id="matrix"></div>
+<div class="matrix-legend mono">How the hook-testing matrix works · <span style="color:#F0A48D">testing</span> · <span style="color:#34D399">winner</span></div>
+</div>
+<div class="hooks">
+<div class="hook-card reveal" style="--i:0"><span class="n mono">Concept A · Hook 2</span><div class="h">"Measure your stairwell <em>before</em> you buy a sofa."</div><div class="meta mono"><span>Sample hook</span><b>Sizing</b></div></div>
+<div class="hook-card reveal" style="--i:1"><span class="n mono">Concept B · Hook 1</span><div class="h">"I did the math on my <em>gas</em> bill."</div><div class="meta mono"><span>Sample hook</span><b>ROI math</b></div></div>
+<div class="hook-card reveal" style="--i:2"><span class="n mono">Concept C · Hook 4</span><div class="h">"Setup took <em>4 minutes.</em> Here's proof."</div><div class="meta mono"><span>Sample hook</span><b>Setup speed</b></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING -->
+<section class="section" id="pricing">
+<div class="container">
+<div class="eyebrow reveal">Zero-risk B2B partnership model</div>
+<h2 class="section-title reveal" style="--i:1">"Deploy first, <em class="accent">pay on approval."</em></h2>
+<p class="section-lead reveal" style="--i:2">Founding pilot tiers. We build on staging with your real SKUs; you only pay once your team has approved it live.</p>
+<div class="pricing">
+<div class="plan reveal" style="--i:0">
+<div class="plan-tag">Option A · Custom Shopify CRO tool</div>
+<h3>Interactive product & bundle configurator</h3>
+<div class="plan-price mono">$650–$850 <s>$1,500</s></div>
+<div class="plan-note">One-time build fee · pay only after live staging approval</div>
+<ul>
+<li>We build and host the working tool for your exact Shopify SKUs in 48 hours</li>
+<li>$0 upfront: pay the pilot invoice only once your e-comm team approves it live</li>
+<li>Tiered bundle progress bar and one-click add-on attach</li>
+<li>Self-contained, mobile-first, zero page-speed drag</li>
+</ul>
+<a class="btn-outline" data-magnetic href="mailto:smileyesh2007@gmail.com?subject=Option%20A%20%E2%80%94%20Configurator%20Pilot">Start option A <span class="btn-arrow">→</span></a>
+</div>
+<div class="plan reveal" style="--i:1">
+<div class="plan-tag">Option B · 30-day paid social sprint</div>
+<h3>Modular 9:16 direct-response ad lab</h3>
+<div class="plan-price mono">$2,000–$2,400 <small>/mo</small></div>
+<div class="plan-note">8–12 vertical (9:16) ad variations per month</div>
+<ul>
+<li>3 core creative concepts × 3–4 modular 3-second hooks</li>
+<li>Full whitelisting and dark-posting rights across Meta Reels, TikTok & Shorts</li>
+<li>Built around high-intent buyer friction: sizing, setup speed, ROI math</li>
+<li>Hook-testing matrix and raw project files included</li>
+</ul>
+<a class="btn-outline" data-magnetic href="mailto:smileyesh2007@gmail.com?subject=Option%20B%20%E2%80%94%20Ad%20Lab%20Sprint">Start option B <span class="btn-arrow">→</span></a>
+</div>
+<div class="plan featured reveal" style="--i:2">
+<span class="ribbon">Best value · save $800+</span>
+<div class="plan-tag">Option C · All-in growth bundle</div>
+<h3>Interactive CRO configurator + 10 whitelisted ads</h3>
+<div class="plan-price mono">$2,300–$2,850</div>
+<div class="plan-note">The complete acquisition-to-conversion funnel sprint</div>
+<ul>
+<li><strong>Option A + option B in one connected funnel</strong></li>
+<li>Paid-social traffic lands directly in your interactive configurator</li>
+<li>Lifts ROAS and first-order bundle AOV at the same time</li>
+<li>Priority 48-hour staging deployment</li>
+</ul>
+<a class="btn-primary" data-magnetic href="mailto:smileyesh2007@gmail.com?subject=Option%20C%20%E2%80%94%20All-In%20Growth%20Bundle">Start option C <span class="btn-arrow">→</span></a>
+</div>
+</div>
+<div class="guarantee reveal"><span>🛡️</span><span><b>Pay-on-approval:</b> if your team doesn't approve the staging build, you owe nothing.</span></div>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta container">
+<h2 class="cta-title reveal">Let's build your<br><em>first configurator.</em></h2>
+<p class="cta-sub reveal" style="--i:1">Send your store link. You'll get a staging build in 48 hours, and pay nothing until it's approved.</p>
+<div class="reveal" style="--i:2"><a class="btn-primary big-btn" data-magnetic href="mailto:smileyesh2007@gmail.com?subject=B2B%20Shopify%20CRO%20%26%20Paid%20Social%20Pilot">Book a staging pilot <span class="btn-arrow">→</span></a></div>
+<div class="email-copy reveal" style="--i:3">or copy <button id="copy-email" type="button">smileyesh2007@gmail.com</button></div>
+</section>
+</main>
+<footer>
+<div class="footer-inner">
+<span><strong>Yeshwanth Digital CRO & Paid Media Lab</strong> · Founded by Chintala Yeshwanth Reddy</span>
+<span>Direct B2B contact: <a href="mailto:smileyesh2007@gmail.com">smileyesh2007@gmail.com</a></span>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
